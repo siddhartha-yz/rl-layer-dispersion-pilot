@@ -1,0 +1,555 @@
+{
+  "arm": "middle",
+  "seed": 33,
+  "lr": 0.0001,
+  "steps": 300,
+  "batch_size": 16,
+  "group_size": 8,
+  "sampled_actions": 38400,
+  "train_seconds": 25.350571251001384,
+  "scores": {
+    "validation": {
+      "accuracy": 0.3333333333333333,
+      "expected_reward": 0.3326158821582794,
+      "entropy": 0.2997205853462219,
+      "by_operation": {
+        "+": 0.32894736842105265,
+        "-": 0.275,
+        "*": 0.3684210526315789
+      }
+    },
+    "test_id": {
+      "accuracy": 0.3776041666666667,
+      "expected_reward": 0.3750793933868408,
+      "entropy": 0.3374713361263275,
+      "by_operation": {
+        "+": 0.32575757575757575,
+        "-": 0.3888888888888889,
+        "*": 0.4166666666666667
+      }
+    },
+    "test_format": {
+      "accuracy": 0.3958333333333333,
+      "expected_reward": 0.3459782898426056,
+      "entropy": 0.9031403660774231,
+      "by_operation": {
+        "+": 0.3712121212121212,
+        "-": 0.3939393939393939,
+        "*": 0.425
+      }
+    },
+    "test_large": {
+      "accuracy": 0.3697916666666667,
+      "expected_reward": 0.3599834442138672,
+      "entropy": 0.320662260055542,
+      "by_operation": {
+        "+": 0.4338235294117647,
+        "-": 0.3709677419354839,
+        "*": 0.29838709677419356
+      }
+    },
+    "test_question_shuffle": {
+      "accuracy": 0.21354166666666666,
+      "expected_reward": 0.22434532642364502,
+      "entropy": 0.41044071316719055,
+      "by_operation": {
+        "+": 0.23484848484848486,
+        "-": 0.21296296296296297,
+        "*": 0.19444444444444445
+      }
+    }
+  },
+  "active_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "log": [
+    {
+      "step": 1,
+      "sampled_reward": 0.34375,
+      "expected_reward": 0.29923567175865173,
+      "gradient_norm": 6.514625072479248,
+      "seconds": 0.06908118900173577
+    },
+    {
+      "step": 20,
+      "sampled_reward": 0.203125,
+      "expected_reward": 0.1922168731689453,
+      "gradient_norm": 7.59124755859375,
+      "seconds": 1.4425279860006412
+    },
+    {
+      "step": 40,
+      "sampled_reward": 0.2265625,
+      "expected_reward": 0.19092366099357605,
+      "gradient_norm": 3.4925968647003174,
+      "seconds": 2.8337217309963307
+    },
+    {
+      "step": 60,
+      "sampled_reward": 0.234375,
+      "expected_reward": 0.24768401682376862,
+      "gradient_norm": 1.407638430595398,
+      "seconds": 4.224472946996684
+    },
+    {
+      "step": 80,
+      "sampled_reward": 0.28125,
+      "expected_reward": 0.2801528573036194,
+      "gradient_norm": 2.0498602390289307,
+      "seconds": 5.613206388996332
+    },
+    {
+      "step": 100,
+      "sampled_reward": 0.34375,
+      "expected_reward": 0.3401501774787903,
+      "gradient_norm": 4.898620128631592,
+      "seconds": 7.022733452002285
+    },
+    {
+      "step": 120,
+      "sampled_reward": 0.34375,
+      "expected_reward": 0.3379665017127991,
+      "gradient_norm": 6.485082149505615,
+      "seconds": 8.408050167003239
+    },
+    {
+      "step": 140,
+      "sampled_reward": 0.4453125,
+      "expected_reward": 0.36387956142425537,
+      "gradient_norm": 5.789813041687012,
+      "seconds": 9.790862636000384
+    },
+    {
+      "step": 160,
+      "sampled_reward": 0.203125,
+      "expected_reward": 0.1840113401412964,
+      "gradient_norm": 4.43891716003418,
+      "seconds": 11.18454808399838
+    },
+    {
+      "step": 180,
+      "sampled_reward": 0.46875,
+      "expected_reward": 0.4568065404891968,
+      "gradient_norm": 4.287373065948486,
+      "seconds": 12.572393700997054
+    },
+    {
+      "step": 200,
+      "sampled_reward": 0.421875,
+      "expected_reward": 0.39997297525405884,
+      "gradient_norm": 5.002132892608643,
+      "seconds": 13.968515637003293
+    },
+    {
+      "step": 220,
+      "sampled_reward": 0.2734375,
+      "expected_reward": 0.28054726123809814,
+      "gradient_norm": 8.173002243041992,
+      "seconds": 15.355515939001634
+    },
+    {
+      "step": 240,
+      "sampled_reward": 0.5,
+      "expected_reward": 0.49961790442466736,
+      "gradient_norm": 0.6104790568351746,
+      "seconds": 16.734679836001305
+    },
+    {
+      "step": 260,
+      "sampled_reward": 0.359375,
+      "expected_reward": 0.36817094683647156,
+      "gradient_norm": 15.04677963256836,
+      "seconds": 18.182434813999862
+    },
+    {
+      "step": 280,
+      "sampled_reward": 0.390625,
+      "expected_reward": 0.38552433252334595,
+      "gradient_norm": 16.107831954956055,
+      "seconds": 19.631926488000317
+    },
+    {
+      "step": 300,
+      "sampled_reward": 0.4296875,
+      "expected_reward": 0.4600086212158203,
+      "gradient_norm": 10.631828308105469,
+      "seconds": 21.032179150002776
+    }
+  ],
+  "ablation": {
+    "full": {
+      "accuracy": 0.3984375,
+      "expected_reward": 0.40510308742523193,
+      "entropy": 0.3629840016365051,
+      "by_operation": {
+        "+": 0.34375,
+        "-": 0.4318181818181818,
+        "*": 0.40384615384615385
+      }
+    },
+    "layers": [
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 0,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 1,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 2,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 3,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 4,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 5,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 6,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 7,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 8,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.375,
+        "expected_reward": 0.3579283654689789,
+        "entropy": 0.910719633102417,
+        "by_operation": {
+          "+": 0.3125,
+          "-": 0.3181818181818182,
+          "*": 0.46153846153846156
+        },
+        "layer": 9,
+        "reward_drop": 0.04717472195625305,
+        "accuracy_drop": 0.0234375,
+        "kl_from_full": 0.5751886367797852
+      },
+      {
+        "accuracy": 0.4453125,
+        "expected_reward": 0.4210509955883026,
+        "entropy": 0.4953375458717346,
+        "by_operation": {
+          "+": 0.375,
+          "-": 0.45454545454545453,
+          "*": 0.4807692307692308
+        },
+        "layer": 10,
+        "reward_drop": -0.01594790816307068,
+        "accuracy_drop": -0.046875,
+        "kl_from_full": 0.3336111903190613
+      },
+      {
+        "accuracy": 0.4296875,
+        "expected_reward": 0.41229164600372314,
+        "entropy": 0.3988037109375,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4772727272727273,
+          "*": 0.4423076923076923
+        },
+        "layer": 11,
+        "reward_drop": -0.007188558578491211,
+        "accuracy_drop": -0.03125,
+        "kl_from_full": 0.047881145030260086
+      },
+      {
+        "accuracy": 0.4296875,
+        "expected_reward": 0.41220659017562866,
+        "entropy": 0.43087148666381836,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.45454545454545453,
+          "*": 0.46153846153846156
+        },
+        "layer": 12,
+        "reward_drop": -0.0071035027503967285,
+        "accuracy_drop": -0.03125,
+        "kl_from_full": 0.01989511400461197
+      },
+      {
+        "accuracy": 0.421875,
+        "expected_reward": 0.40712910890579224,
+        "entropy": 0.3781662583351135,
+        "by_operation": {
+          "+": 0.375,
+          "-": 0.4318181818181818,
+          "*": 0.4423076923076923
+        },
+        "layer": 13,
+        "reward_drop": -0.0020260214805603027,
+        "accuracy_drop": -0.0234375,
+        "kl_from_full": 0.00404724758118391
+      },
+      {
+        "accuracy": 0.4296875,
+        "expected_reward": 0.40702468156814575,
+        "entropy": 0.37295180559158325,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.45454545454545453,
+          "*": 0.46153846153846156
+        },
+        "layer": 14,
+        "reward_drop": -0.0019215941429138184,
+        "accuracy_drop": -0.03125,
+        "kl_from_full": 0.010186126455664635
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 15,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 16,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 17,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 18,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 19,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 20,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 21,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 22,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      },
+      {
+        "accuracy": 0.3984375,
+        "expected_reward": 0.40510308742523193,
+        "entropy": 0.3629840016365051,
+        "by_operation": {
+          "+": 0.34375,
+          "-": 0.4318181818181818,
+          "*": 0.40384615384615385
+        },
+        "layer": 23,
+        "reward_drop": 0.0,
+        "accuracy_drop": 0.0,
+        "kl_from_full": 0.0
+      }
+    ],
+    "effective_positive_layers": 1.0,
+    "max_reward_drop": 0.04717472195625305,
+    "warning": "Single-layer removals are non-additive; this is a sensitivity proxy."
+  }
+}

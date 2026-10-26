@@ -1,0 +1,197 @@
+{
+  "status": "Secondary analysis; primary training and unscaled scores unchanged.",
+  "selection": "Seed-0 tuning validation expected reward, one common scale for all three main seeds.",
+  "validation": {
+    "1.0": {
+      "accuracy": 0.4583333333333333,
+      "expected_reward": 0.4526590406894684,
+      "entropy": 0.2523845434188843,
+      "by_operation": {
+        "+": 0.3815789473684211,
+        "-": 0.3,
+        "*": 0.618421052631579
+      }
+    },
+    "0.75": {
+      "accuracy": 0.4635416666666667,
+      "expected_reward": 0.4651006758213043,
+      "entropy": 0.3090347647666931,
+      "by_operation": {
+        "+": 0.39473684210526316,
+        "-": 0.325,
+        "*": 0.6052631578947368
+      }
+    }
+  },
+  "selected_scale": 0.75,
+  "runs": [
+    {
+      "seed": 11,
+      "scale": 0.75,
+      "scores": {
+        "validation": {
+          "accuracy": 0.53125,
+          "expected_reward": 0.5403144955635071,
+          "entropy": 0.2979695796966553,
+          "by_operation": {
+            "+": 0.47368421052631576,
+            "-": 0.375,
+            "*": 0.6710526315789473
+          }
+        },
+        "test_id": {
+          "accuracy": 0.6067708333333334,
+          "expected_reward": 0.606071949005127,
+          "entropy": 0.24501846730709076,
+          "by_operation": {
+            "+": 0.4621212121212121,
+            "-": 0.5740740740740741,
+            "*": 0.7638888888888888
+          }
+        },
+        "test_format": {
+          "accuracy": 0.4947916666666667,
+          "expected_reward": 0.4608443081378937,
+          "entropy": 0.6124588251113892,
+          "by_operation": {
+            "+": 0.4621212121212121,
+            "-": 0.45454545454545453,
+            "*": 0.575
+          }
+        },
+        "test_large": {
+          "accuracy": 0.4583333333333333,
+          "expected_reward": 0.4651069641113281,
+          "entropy": 0.32862356305122375,
+          "by_operation": {
+            "+": 0.5147058823529411,
+            "-": 0.3548387096774194,
+            "*": 0.5
+          }
+        },
+        "test_question_shuffle": {
+          "accuracy": 0.23958333333333334,
+          "expected_reward": 0.2376495599746704,
+          "entropy": 0.34734663367271423,
+          "by_operation": {
+            "+": 0.25757575757575757,
+            "-": 0.24074074074074073,
+            "*": 0.2222222222222222
+          }
+        }
+      }
+    },
+    {
+      "seed": 22,
+      "scale": 0.75,
+      "scores": {
+        "validation": {
+          "accuracy": 0.25,
+          "expected_reward": 0.2503525912761688,
+          "entropy": 1.2107685804367065,
+          "by_operation": {
+            "+": 0.25,
+            "-": 0.25,
+            "*": 0.25
+          }
+        },
+        "test_id": {
+          "accuracy": 0.25,
+          "expected_reward": 0.25039076805114746,
+          "entropy": 1.2108955383300781,
+          "by_operation": {
+            "+": 0.25,
+            "-": 0.25,
+            "*": 0.25
+          }
+        },
+        "test_format": {
+          "accuracy": 0.2526041666666667,
+          "expected_reward": 0.24958379566669464,
+          "entropy": 1.222356915473938,
+          "by_operation": {
+            "+": 0.25757575757575757,
+            "-": 0.25,
+            "*": 0.25
+          }
+        },
+        "test_large": {
+          "accuracy": 0.25,
+          "expected_reward": 0.25046658515930176,
+          "entropy": 1.2064265012741089,
+          "by_operation": {
+            "+": 0.25,
+            "-": 0.25,
+            "*": 0.25
+          }
+        },
+        "test_question_shuffle": {
+          "accuracy": 0.25,
+          "expected_reward": 0.2500860393047333,
+          "entropy": 1.211118221282959,
+          "by_operation": {
+            "+": 0.25,
+            "-": 0.25,
+            "*": 0.25
+          }
+        }
+      }
+    },
+    {
+      "seed": 33,
+      "scale": 0.75,
+      "scores": {
+        "validation": {
+          "accuracy": 0.5729166666666666,
+          "expected_reward": 0.5413430333137512,
+          "entropy": 0.35033655166625977,
+          "by_operation": {
+            "+": 0.5394736842105263,
+            "-": 0.475,
+            "*": 0.6578947368421053
+          }
+        },
+        "test_id": {
+          "accuracy": 0.5859375,
+          "expected_reward": 0.5765590071678162,
+          "entropy": 0.3362061679363251,
+          "by_operation": {
+            "+": 0.3939393939393939,
+            "-": 0.5833333333333334,
+            "*": 0.7638888888888888
+          }
+        },
+        "test_format": {
+          "accuracy": 0.46875,
+          "expected_reward": 0.4442291259765625,
+          "entropy": 0.671582043170929,
+          "by_operation": {
+            "+": 0.4318181818181818,
+            "-": 0.4621212121212121,
+            "*": 0.5166666666666667
+          }
+        },
+        "test_large": {
+          "accuracy": 0.546875,
+          "expected_reward": 0.5372917652130127,
+          "entropy": 0.4216846227645874,
+          "by_operation": {
+            "+": 0.49264705882352944,
+            "-": 0.5,
+            "*": 0.6532258064516129
+          }
+        },
+        "test_question_shuffle": {
+          "accuracy": 0.21875,
+          "expected_reward": 0.2246953248977661,
+          "entropy": 0.3432021141052246,
+          "by_operation": {
+            "+": 0.2196969696969697,
+            "-": 0.18518518518518517,
+            "*": 0.24305555555555555
+          }
+        }
+      }
+    }
+  ]
+}

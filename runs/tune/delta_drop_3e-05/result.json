@@ -1,0 +1,127 @@
+{
+  "arm": "delta_drop",
+  "seed": 0,
+  "lr": 3e-05,
+  "steps": 200,
+  "batch_size": 16,
+  "group_size": 8,
+  "sampled_actions": 25600,
+  "train_seconds": 18.343115096002293,
+  "scores": {
+    "validation": {
+      "accuracy": 0.3333333333333333,
+      "expected_reward": 0.31488674879074097,
+      "entropy": 0.7530250549316406,
+      "by_operation": {
+        "+": 0.2631578947368421,
+        "-": 0.275,
+        "*": 0.4342105263157895
+      }
+    }
+  },
+  "active_counts": [
+    148,
+    157,
+    148,
+    149,
+    139,
+    152,
+    146,
+    145,
+    161,
+    146,
+    152,
+    151,
+    148,
+    138,
+    156,
+    145,
+    155,
+    155,
+    153,
+    145,
+    150,
+    152,
+    148,
+    161
+  ],
+  "log": [
+    {
+      "step": 1,
+      "sampled_reward": 0.2890625,
+      "expected_reward": 0.2839634418487549,
+      "gradient_norm": 19.846538543701172,
+      "seconds": 0.08867935900343582
+    },
+    {
+      "step": 20,
+      "sampled_reward": 0.203125,
+      "expected_reward": 0.2337895631790161,
+      "gradient_norm": 5.500858783721924,
+      "seconds": 1.8402366270020138
+    },
+    {
+      "step": 40,
+      "sampled_reward": 0.2578125,
+      "expected_reward": 0.23969130218029022,
+      "gradient_norm": 8.472090721130371,
+      "seconds": 3.7473758080013795
+    },
+    {
+      "step": 60,
+      "sampled_reward": 0.2890625,
+      "expected_reward": 0.2692040205001831,
+      "gradient_norm": 9.58100414276123,
+      "seconds": 5.482872250002401
+    },
+    {
+      "step": 80,
+      "sampled_reward": 0.2578125,
+      "expected_reward": 0.25791653990745544,
+      "gradient_norm": 4.147799015045166,
+      "seconds": 7.228592823004874
+    },
+    {
+      "step": 100,
+      "sampled_reward": 0.2421875,
+      "expected_reward": 0.25141608715057373,
+      "gradient_norm": 9.09914493560791,
+      "seconds": 8.990599946999282
+    },
+    {
+      "step": 120,
+      "sampled_reward": 0.3203125,
+      "expected_reward": 0.35758230090141296,
+      "gradient_norm": 4.393235683441162,
+      "seconds": 10.703191788001277
+    },
+    {
+      "step": 140,
+      "sampled_reward": 0.2890625,
+      "expected_reward": 0.34680214524269104,
+      "gradient_norm": 5.955512523651123,
+      "seconds": 12.452862779005955
+    },
+    {
+      "step": 160,
+      "sampled_reward": 0.34375,
+      "expected_reward": 0.3588535785675049,
+      "gradient_norm": 3.7364532947540283,
+      "seconds": 14.170842544001061
+    },
+    {
+      "step": 180,
+      "sampled_reward": 0.2578125,
+      "expected_reward": 0.2062513679265976,
+      "gradient_norm": 7.316314697265625,
+      "seconds": 16.04754887799936
+    },
+    {
+      "step": 200,
+      "sampled_reward": 0.390625,
+      "expected_reward": 0.32858458161354065,
+      "gradient_norm": 9.773818969726562,
+      "seconds": 17.794915569000295
+    }
+  ]
+}

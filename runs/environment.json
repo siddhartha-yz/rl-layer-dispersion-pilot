@@ -1,0 +1,29 @@
+{
+  "torch": "2.14.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "layers": 24,
+  "trainable_parameters": 4399104,
+  "config": {
+    "mode": "pilot",
+    "steps": 300,
+    "batch_size": 16,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "arms": [
+      "all",
+      "middle",
+      "rotate",
+      "delta_drop"
+    ],
+    "lr": 0.0001,
+    "lrs": [
+      3e-05,
+      0.0001
+    ],
+    "out": "runs"
+  },
+  "dataset_sha256": "b874f69801573f2b058ca87ab6ad71c6dcafbe42f070d72c40432bda8dc130a2"
+}

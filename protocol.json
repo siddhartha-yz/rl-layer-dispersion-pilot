@@ -1,0 +1,45 @@
+{
+  "question": "Does randomly withholding learned RL increments reduce functional layer dependence and improve held-out performance?",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision_from_api": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "scope": "Four-action arithmetic contextual-bandit RL, not open-ended reasoning or a reproduction of the 1.5B-8B paper.",
+  "parameterization": "Frozen pretrained weights; identical rank-8 LoRA on q/k/v/o and gate/up/down projections in 24 layers; alpha=16; embedding and head frozen.",
+  "arms": {
+    "all": "Update all 24 layer adapters; deterministic full adapter forward.",
+    "middle": "Update only layers 9-14; deterministic full adapter forward.",
+    "rotate": "Each step update 18 of 24 randomly selected layers; every learned increment remains in the forward pass.",
+    "delta_drop": "Each step omit learned increments in 6 of 24 layers; update the remaining 18; pretrained weights unchanged; no inverted-dropout scaling. Deploy with all increments present."
+  },
+  "training": {
+    "objective": "One-update on-policy group-relative policy gradient; 8 actions per question, binary correctness, group population-standard-deviation normalization, exact 4-action KL penalty to pretrained policy with beta=0.1.",
+    "main_steps": 300,
+    "batch_size": 16,
+    "actions_per_question": 8,
+    "main_seeds": [11, 22, 33],
+    "optimizer": "AdamW, weight_decay=0, gradient_norm_clip=1",
+    "tuning": "Seed 0, 200 steps for each arm at learning rates 3e-5 and 1e-4; choose by validation expected reward only; final main checkpoint fixed in advance."
+  },
+  "data": {
+    "version": "v3: blocks of 4 distinct questions with identical ordered options, exactly one correct answer per letter",
+    "generator_seed": 20261024,
+    "train": 1536,
+    "validation": 192,
+    "test_id": 384,
+    "test_format": 384,
+    "test_large": 384,
+    "train_operands": "2..49",
+    "large_test_operands": "50..99",
+    "operations": ["+", "-", "*"],
+    "deduplication": "No shared arithmetic identity across splits, including commutative swaps; each 4-question block has all 4 labels, the same ordered choices and the same operation. Any question-blind options-only rule achieves exactly 25% on complete blocks.",
+    "ood": "Equal average of held-out word-format and larger-operand test scores."
+  },
+  "mechanism_measure": "On 32 complete ID test choice blocks (128 questions), remove each whole-layer learned increment separately. Record expected-reward drop and KL from full policy. Positive-drop concentration is a non-additive sensitivity proxy, not a causal partition of RL gains.",
+  "shortcut_control": "Cycle held-out questions within each operation while retaining original options and reward labels. A large accuracy collapse supports actual use of question content; check balanced min/max-option heuristics and report this control.",
+  "decision_rules": {
+    "informative_learning": "All-layer RL should improve ID greedy accuracy by at least 3 percentage points over its pretrained baseline; otherwise classify as weak or failed learning signal.",
+    "concentration_prerequisite": "Inspect whether baseline all-layer adapters have concentrated functional sensitivity; report whether it is centered in middle layers instead of assuming it.",
+    "promising_performance": "Delta-drop OOD greedy accuracy at least 2 percentage points above all-layer RL on average, positive direction in all 3 paired seeds, and ID loss no worse than 2 points. Also compare to fixed-middle and rotate controls.",
+    "mechanism_support": "Performance gain alone does not validate dispersion. Require reduced worst single-layer expected-reward loss and more effective positive-contribution layers; report paired uncertainty.",
+    "limits": "Three seeds and synthetic one-token actions establish only pilot evidence. No novelty claim or long-reasoning generalization claim."
+  }
+}

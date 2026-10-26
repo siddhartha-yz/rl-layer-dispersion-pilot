@@ -1,0 +1,52 @@
+{
+  "train": {
+    "questions": 1536,
+    "blocks": 384,
+    "operations": {
+      "-": 532,
+      "*": 472,
+      "+": 532
+    },
+    "any_options_only_rule_accuracy": 0.25
+  },
+  "validation": {
+    "questions": 192,
+    "blocks": 48,
+    "operations": {
+      "*": 76,
+      "-": 40,
+      "+": 76
+    },
+    "any_options_only_rule_accuracy": 0.25
+  },
+  "test_id": {
+    "questions": 384,
+    "blocks": 96,
+    "operations": {
+      "+": 132,
+      "*": 144,
+      "-": 108
+    },
+    "any_options_only_rule_accuracy": 0.25
+  },
+  "test_format": {
+    "questions": 384,
+    "blocks": 96,
+    "operations": {
+      "*": 120,
+      "+": 132,
+      "-": 132
+    },
+    "any_options_only_rule_accuracy": 0.25
+  },
+  "test_large": {
+    "questions": 384,
+    "blocks": 96,
+    "operations": {
+      "+": 136,
+      "-": 124,
+      "*": 124
+    },
+    "any_options_only_rule_accuracy": 0.25
+  }
+}

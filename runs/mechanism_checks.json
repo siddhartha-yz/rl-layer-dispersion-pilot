@@ -1,0 +1,9 @@
+{
+  "conditional_logits_match_native": true,
+  "no_pretrained_parameter_trainable": true,
+  "all_increments_off_restores_pretrained_policy": true,
+  "dropped_layers_have_no_adapter_gradients": true,
+  "every_active_layer_receives_gradient": true,
+  "pretrained_parameters_have_no_gradients": true,
+  "fixed_mask_logprobs_reproducible": true
+}

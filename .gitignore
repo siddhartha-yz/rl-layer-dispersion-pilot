@@ -1,0 +1,12 @@
+.venv/
+models/
+__pycache__/
+work/
+archive/
+sources/
+release-assets/
+*.log
+*.pt
+runs/probe/
+.env
+.env.*
